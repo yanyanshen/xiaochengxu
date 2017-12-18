@@ -1,13 +1,120 @@
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">          获取头像昵称</button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"     background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <text class="user-motto">{{motto}}！</text>
   </view>
 </view>
+<view>2017-12-18</view>
+<!-- <view>{{message}}</view> -->
+<!--组件属性（需要在双引号之内）  -->
+<!-- <view id="item-{{id}}">555 </view> -->
+
+<!--控制属性（需要在双引号之内）  -->
+ <!-- <view wx:if="{{condition}}">11</view>  -->
+
+<!--关键字（需要在双引号之内）  -->
+<!-- <checkbox checked='{{false}}'></checkbox>
+<view hidden='{{flag?true:flase}}'>hidden</view>
+<view>{{a+b}}+{{c}}+d</view> -->
+
+<!--逻辑判断  -->
+ <!-- <view wx:if="{{length > 11}}">1</view> 
+ <view wx:elif="{{length > 11}}">2</view>
+ <view wx:else>3</view> -->
+
+<!--字符串运算  -->
+<!-- <view>{{"hello " + name}}</view> -->
+
+<!--数据路径运算  -->
+<!-- <view>{{object.key}} {{array[0]}}</view> -->
+
+<!--也可以在Mustache内直接进行结合，构成新的对象或者数组  -->
+<!-- <view wx:for-items="{{[zero,1,2,3,4]}}">{{item}}</view> -->
+
+<!--对象  -->
+<!-- <template is="objectCombine" data="{{for: a, bar: b}}"></template>
+
+<view wx:for="{{[1,2,3]}}">{{item}}</view> -->
+
+ <!--在组件上使用 wx:for 控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件。
+默认数组的当前项的下标变量名默认为 index，数组当前项的变量名默认为 item  -->
+ <!-- <view wx:for="{{array}}">
+{{index}}:{{item.message}}
+</view>   -->
+
+<!--也可以指定数组当前元素的变量名 -->
+<!-- <view wx:for="{{array}}" wx:for-index="key" wx:for-item="itemName">
+{{key}}:{{itemName.message}}
+</view> -->
+
+<!--九九乘法表  -->
+<!-- <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view> -->
+
+
+<!-- <block wx:for="{{[1, 2, 3]}}">
+  <view> {{index}}: </view>
+  <view> {{item}} </view>
+</block>  -->
+
+<!-- <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}}-{{item.unique}}</switch> -->
+
+<!-- <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch> -->
+<!-- <view wx:for="array">
+  {{item}}
+</view> -->
+
+<!-- <view wx:for="{{['a','r','r','a','y']}}">
+  {{item}} -->
+<!-- </view> -->
+<!-- <button bindtap="switch"> Switch </button> -->
+<!-- <button bindtap="addToFront"> Add to the front </button> -->
+<!-- 
+<switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch> -->
+<!-- <button bindtap="addNumberToFront"> Add to the front </button> -->
+
+<!-- <block wx:if="{{true}}">
+  <view> view1 </view>
+  <view> view2 </view>
+</block> -->
+
+<!--使用name属性，作为模板的名字。然后在<template/>内定义代码片段，如  -->
+ <template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template> 
+
+ <template is="msgItem" data="{{...item}}"/> 
+
+<!-- <view>{{text}}</view>
+<view>{{array[0].msg}}</view>
+  <button bindtap="changeName"> Click me! </button>
+<view>---------------------------</view>
+ <view>{{text}}</view>
+<button bindtap="changeText"> 点击更改text值 </button>
+<view>{{num}}</view>
+<button bindtap="changeNum"> 更改之前num = 1 </button>
+<view>{{array[0].text}}</view>
+<button bindtap="changeItemInArray"> Change Array data </button>
+<view>{{object.msg}}</view>
+<button bindtap="changeItemInObject"> Change Object data </button>
+<view>{{newField.text}}</view>
+<button bindtap="addNewField"> Add new data </button>
+
+<button bindtap='hello_name'>helloMINA</button>
+
+<button bindtap="goodbyeMINA">goodbyeMINA</button>  -->
