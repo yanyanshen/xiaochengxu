@@ -1,0 +1,54 @@
+<view>
+  <view class="top">
+    <view align="center" class="top-img"><image src="../../images/header.jpg"></image></view>
+    <view class="top-text">点击登录</view>
+  </view>
+  <view class="middle"></view>
+
+  <view class='content'>
+    <view class="content-middle1">
+      <image class="content-image" src="../../images/order.png"></image>
+        订单中心
+      <image class="back-image" src="../../images/back.png"></image>
+    </view>
+    <view class="content-middle">
+    <image class="content-image" src="../../images/record.png"></image>
+    预约报名
+    <image class="back-image" src="../../images/back.png"></image>
+    </view>
+    <view class="content-middle1">
+    <image class="content-image" src="../../images/guide.png"></image>
+      学车指南
+      <image class="back-image" src="../../images/back.png"></image>
+    </view>
+  </view>
+  <view class="middle"></view>
+   
+  <view class='content'>
+    <view class="content-middle1">
+      <image class="content-image" src="../../images/aboultUs.png"></image>
+      关于我们
+      <image class="back-image" src="../../images/back.png"></image>
+    </view>
+    <view class="content-middle" bindtap='navigatePrivacy'>
+      <image class="content-image" src="../../images/privacy.png"></image>
+      隐私条款
+      <image class="back-image" src="../../images/back.png"></image>
+    </view>
+    <view class='content-middle1'>
+      <image class="content-image" src="../../images/liability.png"></image>
+      负责声明
+      <image class="back-image" src="../../images/back.png"></image>
+    </view>
+  </view>  
+  <view class="middle"></view> 
+  
+  <view class="content">
+    <view class='content-middle1'>
+      <image class="content-image" src="../../images/setUp.png"></image>
+      设置
+      <image class="back-image" src="../../images/back.png"></image>
+    </view>
+  </view> 
+  <view class="middle"></view> 
+</view>
