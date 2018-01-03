@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/login/login",
-    "pages/login/privacy",
-    "pages/schools/schools"
+    "pages/logs/logs",
+    "pages/schools/schools",
+    "pages/user/user",
+    "pages/user/privacy"
   ],
   "window": {  
     "navigationBarTitleText": "517驾校",
@@ -37,7 +38,7 @@
         "text": "百科"
       },
       {
-        "pagePath": "pages/login/login",
+        "pagePath": "pages/user/user",
         "iconPath": "images/index_footer_nav05.png",
         "text": "我的"
       }

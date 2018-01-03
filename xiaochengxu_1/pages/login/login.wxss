@@ -1,25 +1,7 @@
-/* pages/login/login.wxss */
+.middle {background-color: rgb(245, 244, 249);padding:15px 0;font-size: 14px}
+.mobile {text-align: center;height: 50px;line-height: 50px;font-size: 14px}
 
-/*个人中心头像部分  */
+.login_btn {background-color: white;color:#fa7124;border:1px solid rgb(245, 244, 249);width: 256px;margin-top: 80px;font-weight: bold;font-family: "微软雅黑"}
+.register {padding: 20px 0;margin: 20px 0;text-align: center;font-size: 15px;color: #fa7124;font-weight: bold;font-family: "微软雅黑"}
 
-.top{
-  margin:0 auto;
-  text-align: center;
-  
-}
-.top-img {height: 90px;}
-.top-img image {width: 60px;height: 60px;border-radius: 100px;vertical-align: middle;margin-top: 10px}
-.top-text {text-align: center;height: 20px;padding-bottom: 30px}
-.middle {background-color: rgb(245, 244, 249);padding:5px 0}
-
-/*个人中心  内容部分样式  */
-.middle-top {
-  border:1px solid red;
-}
-.content-middle1 {padding: 10px 0 10px 20px;}
-.content-middle{border-top:1px solid rgb(245, 244, 249);border-bottom :1px solid rgb(245, 244, 249);padding:10px 0 10px 20px;}
-
-.content {font-size: 14px;}
-
-.content-image{width:22px;height: 22px;vertical-align: middle;padding-right: 20px}
-.back-image {float: right;padding-right: 20px;width:16px;height: 16px;vertical-align: middle}
+.forget {color: #fa7124;text-align: center;font-size: 14px;padding: 20px 0;font-family: "微软雅黑"}

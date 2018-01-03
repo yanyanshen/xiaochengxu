@@ -1,0 +1,25 @@
+/* pages/login/login.wxss */
+
+/*个人中心头像部分  */
+
+.top{
+  margin:0 auto;
+  text-align: center;
+  
+}
+.top-img {height: 90px;}
+.top-img image {width: 60px;height: 60px;border-radius: 100px;vertical-align: middle;margin-top: 10px}
+.top-text {text-align: center;height: 20px;padding-bottom: 30px}
+.middle {background-color: rgb(245, 244, 249);padding:5px 0}
+
+/*个人中心  内容部分样式  */
+.middle-top {
+  border:1px solid red;
+}
+.content-middle1 {padding: 10px 0 10px 20px;}
+.content-middle{border-top:1px solid rgb(245, 244, 249);border-bottom :1px solid rgb(245, 244, 249);padding:10px 0 10px 20px;}
+
+.content {font-size: 14px;}
+
+.content-image{width:22px;height: 22px;vertical-align: middle;padding-right: 20px}
+.back-image {float: right;padding-right: 20px;width:16px;height: 16px;vertical-align: middle}
